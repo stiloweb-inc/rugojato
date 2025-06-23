@@ -1,4 +1,7 @@
+"use client";
+
 import { cn } from "@/lib/utils";
+import { motion } from "motion/react";
 import { Button } from "../ui/button";
 
 export const ServicesSection = () => {
@@ -60,34 +63,67 @@ export const ServicesSection = () => {
           {services
             .filter((item) => item.id <= 3)
             .map((item, i) => (
-              <ServiceItem
+              <motion.span
                 key={i}
-                title={item.title}
-                description={item.description}
-              />
+                initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
+                whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+                transition={{
+                  duration: 0.3,
+                  delay: i * 0.1,
+                  ease: "easeInOut",
+                }}
+                className="mr-2 inline-block"
+              >
+                <ServiceItem
+                  title={item.title}
+                  description={item.description}
+                />
+              </motion.span>
             ))}
         </div>
         <div className="flex gap-4 w-full items-center justify-center">
           {services
             .filter((item) => item.id <= 6 && item.id >= 4)
             .map((item, i) => (
-              <ServiceItem
-                color="red"
+              <motion.span
                 key={i}
-                title={item.title}
-                description={item.description}
-              />
+                initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
+                whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+                transition={{
+                  duration: 0.3,
+                  delay: i * 0.1,
+                  ease: "easeInOut",
+                }}
+                className="mr-2 inline-block"
+              >
+                <ServiceItem
+                  color="red"
+                  title={item.title}
+                  description={item.description}
+                />
+              </motion.span>
             ))}
         </div>
         <div className="flex gap-4 w-full items-center justify-center">
           {services
             .filter((item) => item.id <= 8 && item.id >= 7)
             .map((item, i) => (
-              <ServiceItem
+              <motion.span
                 key={i}
-                title={item.title}
-                description={item.description}
-              />
+                initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
+                whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+                transition={{
+                  duration: 0.3,
+                  delay: i * 0.1,
+                  ease: "easeInOut",
+                }}
+                className="mr-2 inline-block"
+              >
+                <ServiceItem
+                  title={item.title}
+                  description={item.description}
+                />
+              </motion.span>
             ))}
         </div>
       </div>
@@ -130,7 +166,10 @@ const ServiceItem = ({
           <p className="text-md text-white">{description}</p>
         </div>
       </div>
-      <Button variant="white" className="uppercase font-bold -mt-5">
+      <Button
+        variant="white"
+        className="uppercase font-bold -mt-5 transform hover:-translate-y-1 transition duration-400"
+      >
         Solicite uma cotação
       </Button>
     </div>
