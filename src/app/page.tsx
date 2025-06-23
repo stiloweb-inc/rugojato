@@ -1,3 +1,4 @@
+import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { AboutSection } from "@/components/sections/about-section";
 import { CtaSection } from "@/components/sections/cta-section";
@@ -16,6 +17,7 @@ export default function Home() {
         <ServicesSection />
         <CtaSection />
       </main>
+      <Footer />
     </>
   );
 }

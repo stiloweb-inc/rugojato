@@ -8,7 +8,7 @@ export const HeroSection = () => {
   const [isVisible, setVisible] = useState(false);
 
   return (
-    <div className="grid grid-cols-2 w-full h-dvh bg-[#085E9B] bg-[url('/images/hero.png')] bg-center bg-cover">
+    <div className="grid grid-cols-2 w-full h-dvh bg-[#085E9B] bg-[url('/images/hero.png')] bg-center bg-cover pt-[6rem]">
       <div className="flex flex-col items-center justify-center w-full gap-4">
         <div className="flex flex-col items-start justify-center w-2/3 gap-2">
           <div className="flex flex-col text-white font-light">
