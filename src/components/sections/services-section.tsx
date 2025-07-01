@@ -3,58 +3,11 @@
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import { Button } from "../ui/button";
+import { db } from "@/database";
+import { useServiceParams } from "@/hooks/use-service-params";
 
 export const ServicesSection = () => {
-  const services = [
-    {
-      id: 1,
-      title: "Pintura P.U.",
-      description:
-        "A tinta PU é uma tinta à base de resinas poliuretano, bicomponente. A tinta poliuretano possui ótima resistência a intempéries, boa dureza e flexibilidade e é indicada para pintura em ambientes externos sujeitos à ação solar, pois ela possui alta resistencia aos raios solares.",
-    },
-    {
-      id: 2,
-      title: "Inspeções Técnicas",
-      description:
-        "A inspeção visual de pintura busca manter a boa condição da pintura industrial. O processo analisa se todas as exigências técnicas das normas de pintura foram executadas com sucesso.",
-    },
-    {
-      id: 3,
-      title: "Jateamento abrasivo",
-      description:
-        "Muito utilizado no setor industrial, no preparo de superfícies metálicas que vão receber pintura, o jateamento é um processo abrasivo de alta pressão e velocidade, que confere o tratamento superficial de peças metálicas e uniformização de rugosidades.",
-    },
-    {
-      id: 4,
-      title: "Impermeabilização",
-      description:
-        "Aplicamos os melhores produtos do mercado para impermeabilização de tanques de contenção, reservatórios de água, E.T.E, E.T.A, tratamento em telhados.",
-    },
-    {
-      id: 5,
-      title: "Revestimento de pisos industriais",
-      description:
-        "O revestimento tinta epóxi possibilita um piso com alta resistência química, abrasiva e mecânica, além das elevadas propriedades mecânicas (compressão, tração, flexão, impacto e abrasão) e a resistência a choques térmicos.",
-    },
-    {
-      id: 6,
-      title: "Pintura epóxi",
-      description:
-        "Técnica amplamente utilizada na construção civil e é responsável por dar acabamento a pisos de garagens, quadras poliesportivas, salas de cirurgia, clínicas hospitalares e indústria alimentícia.",
-    },
-    {
-      id: 7,
-      title: "Hidrojateamento de baixa pressão",
-      description:
-        "O hidrojateamento de baixa pressão é indicado para limpeza e desentupimento de estruturas frágeis, evitando que eles se quebrem ou trinquem. O de alta pressão, é muito utilizado após reformas e construções, já que a pressão da água facilita remoção de resíduos.",
-    },
-    {
-      id: 8,
-      title: "Gerenciamento de pintura industrial",
-      description:
-        "A tinta PU é uma tinta à base de resinas poliuretano, bicomponente. A tinta poliuretano possui ótima resistência a intempéries, boa dureza e flexibilidade e é indicada para pintura em ambientes externos sujeitos à ação solar, pois ela possui alta resistência aos raios solares.",
-    },
-  ];
+  const services = db.services;
 
   return (
     <div className="grid grid-cols-5 gap-6 w-full bg-[#010C14] py-8">
@@ -75,7 +28,8 @@ export const ServicesSection = () => {
                 className="mr-2 inline-block"
               >
                 <ServiceItem
-                  title={item.title}
+                  id={item.id.toString()}
+                  title={item.name}
                   description={item.description}
                 />
               </motion.span>
@@ -97,8 +51,9 @@ export const ServicesSection = () => {
                 className="mr-2 inline-block"
               >
                 <ServiceItem
+                  id={item.id.toString()}
                   color="red"
-                  title={item.title}
+                  title={item.name}
                   description={item.description}
                 />
               </motion.span>
@@ -120,7 +75,8 @@ export const ServicesSection = () => {
                 className="mr-2 inline-block"
               >
                 <ServiceItem
-                  title={item.title}
+                  id={item.id.toString()}
+                  title={item.name}
                   description={item.description}
                 />
               </motion.span>
@@ -132,14 +88,18 @@ export const ServicesSection = () => {
 };
 
 const ServiceItem = ({
+  id,
   title,
   description,
   color = "blue",
 }: {
+  id: string;
   title: string;
   description: string;
   color?: "blue" | "red";
 }) => {
+  const { setParam } = useServiceParams();
+
   return (
     <div className="flex flex-col items-center justify-center">
       <div
@@ -167,8 +127,10 @@ const ServiceItem = ({
         </div>
       </div>
       <Button
+        type="button"
         variant="white"
         className="uppercase font-bold -mt-5 transform hover:-translate-y-1 transition duration-400"
+        onClick={() => setParam({ serviceId: id })}
       >
         Solicite uma cotação
       </Button>

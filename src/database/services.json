@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Jateamento Abrasivo com Granalha de Aço",
+    "description": "Muito utilizado no setor industrial, no preparo de superfícies metálicas que vão receber pintura, o jateamento é um processo abrasivo de alta pressão e velocidade, que confere o tratamento superficial de peças metálicas e uniformização de rugosidades."
+  },
+  {
+    "id": 2,
+    "name": "Pintura Epóxi",
+    "description": "Técnica amplamente utilizada na construção civil e é responsável por dar acabamento a pisos de garagens, quadras poliesportivas, salas de cirurgia, clínicas hospitalares e indústria alimentícia."
+  },
+  {
+    "id": 3,
+    "name": "Pintura P.U.",
+    "description": "A tinta PU é uma tinta à base de resinas poliuretano, bicomponente. A tinta poliuretano possui ótima resistência a intempéries, boa dureza e flexibilidade e é indicada para pintura em ambientes externos sujeitos à ação solar, pois ela possui alta resistência aos raios solares."
+  },
+  {
+    "id": 4,
+    "name": "Impermeabilização",
+    "description": "Aplicamos os melhores produtos do mercado para impermeabilização de tanques de contenção, reservatórios de água, E.T.E, E.T.A, tratamento em telhados."
+  },
+  {
+    "id": 5,
+    "name": "Hidrojateamento de Alta e Baixa Pressão",
+    "description": "O hidrojateamento de baixa pressão é indicado para limpeza e desentupimento de estruturas frágeis, evitando que eles se quebrem ou trinquem. O de alta pressão, é muito utilizado após reformas e construções, já que a pressão da água facilita remoção de resíduos."
+  },
+  {
+    "id": 6,
+    "name": "Revestimento de Pisos Industriais",
+    "description": "O revestimento de piso industrial com tinta epóxi possibilita um piso com alta resistência química, abrasiva e mecânica. Além de outras vantagens como as elevadas propriedades mecânicas (compressão, tração, flexibilidade, impacto e abrasão) e a resistência a choques térmicos."
+  },
+  {
+    "id": 7,
+    "name": "Inspeções Técnicas de Pintura Industrial",
+    "description": "A inspeção visual de pintura busca manter a boa condição da pintura industrial. O processo analisa se todas as exigências técnicas das normas de pintura foram executadas com sucesso."
+  },
+  {
+    "id": 8,
+    "name": "Gerenciamento de Pintura Industrial",
+    "description": "O sistema de gerenciamento de pintura industrial visa coletar dados, definir o estado físico dos objetos, definir o tipo de proteção adequada, os materiais a serem utilizados e os tipos de serviços necessários."
+  }
+]

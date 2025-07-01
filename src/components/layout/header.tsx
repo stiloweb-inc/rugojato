@@ -5,19 +5,19 @@ export const Header = () => {
   const items: MenuItem[] = [
     {
       label: "Home",
-      href: "#",
+      href: "#home",
     },
     {
       label: "Sobre nós",
-      href: "#",
+      href: "#about",
     },
     {
       label: "Serviços",
-      href: "#",
+      href: "#services",
     },
     {
       label: "Contato",
-      href: "#",
+      href: "#contact",
     },
   ];
 
@@ -25,7 +25,7 @@ export const Header = () => {
     <header className="flex items-center justify-center h-[6rem] w-full fixed my-4 z-40">
       <div className="grid grid-cols-3 w-4/5 h-full gap-4 rounded-4xl bg-white px-12 shadow-lg">
         <div className="flex items-center justify-start">
-          <Link href="#">
+          <Link href="#home">
             <img src="/rugojato.png" alt="logo" className="w-48" />
           </Link>
         </div>

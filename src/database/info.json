@@ -1,0 +1,21 @@
+{
+  "company": {
+    "name": "Rugojato",
+    "description": "Pinturas Industriais e Revestimentos Epóxi em Pisos",
+    "about": "Somos uma empresa idealizada com o propósito de oferecer ao cliente um trabalho técnico e de excelência no ramo de pintura e revestimentos.",
+    "team": "Nossa equipe é composta por profissionais com mais de 20 anos de experiência no ramo, com diversas capacitações no segmento.",
+    "mission": "Agregar valor ao negócio de nossos clientes, levando o melhor custo benefício sem agredir o meio ambiente.",
+    "vision": "Ser referência nacional no segmento de pinturas e revestimentos.",
+    "values": [
+      "Ética",
+      "Pontualidade",
+      "Transparência",
+      "Valorização dos colaboradores"
+    ],
+    "diferentials": "Trabalhamos para entregar aos nossos clientes o mais alto padrão de satisfação, comodidade e segurança em nossos contratos de prestação de serviços."
+  },
+  "contact": {
+    "phone": "62 99984-4762",
+    "email": "lidio@rugojato.com.br"
+  }
+}

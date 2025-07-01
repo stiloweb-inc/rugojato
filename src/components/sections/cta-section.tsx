@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 export const CtaSection = () => {
   return (
-    <div className="grid grid-cols-5 gap-6 w-full h-[24rem] bg-primary bg-[url('/images/cta-image.png')] bg-cover bg-center">
+    <div className="grid grid-cols-5 gap-6 w-full h-[48rem] bg-primary bg-[url('/images/cta-image.png')] bg-cover bg-center">
       <div className="col-start-2 col-span-3 flex flex-col items-center justify-center w-full">
         <div className="flex flex-col w-1/3 items-center text-white gap-4">
           <div className="flex flex-col">

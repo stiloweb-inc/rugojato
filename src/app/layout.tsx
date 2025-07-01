@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import { NuqsAdapter } from "nuqs/adapters/next/app";
+
 export const metadata: Metadata = {
   title: "Rugojato",
 };
@@ -12,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <NuqsAdapter>
+        <body className="antialiased">{children}</body>
+      </NuqsAdapter>
     </html>
   );
 }
