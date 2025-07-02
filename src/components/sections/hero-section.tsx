@@ -5,10 +5,7 @@ import { Button } from "../ui/button";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { generateWhatsAppLink } from "@/utils/generate-whatsapp-link";
-import {
-  IconBrandWhatsapp,
-  IconBrandWhatsappFilled,
-} from "@tabler/icons-react";
+import { IconBrandWhatsappFilled } from "@tabler/icons-react";
 
 export const HeroSection = () => {
   const [isVisible, setVisible] = useState(false);
