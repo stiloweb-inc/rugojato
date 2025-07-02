@@ -13,7 +13,7 @@ export const AboutSection = () => {
           scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
         }}
       >
-        <div className="bg-[url('/images/about.png')] bg-center bg-cover w-[32rem] h-[18rem] border border-primary rounded-bl-4xl rounded-tr-4xl shadow-[-8px_8px_0px_-1px_#eb1b2b] transform hover:scale-105 transition duration-300"></div>
+        <div className="bg-[#15588c] bg-[url('/images/about.png')] grayscale-30 bg-center bg-cover w-[32rem] h-[18rem] border border-primary rounded-bl-4xl rounded-tr-4xl shadow-[-8px_8px_0px_-1px_#eb1b2b] transform hover:scale-105 transition duration-300"></div>
       </motion.div>
       <div className="flex flex-col items-center justify-center w-1/3 gap-4">
         <div className="flex flex-col items-start justify-center gap-6">

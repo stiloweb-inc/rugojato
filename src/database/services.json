@@ -1,42 +1,58 @@
 [
   {
     "id": 1,
-    "name": "Jateamento Abrasivo com Granalha de Aço",
-    "description": "Muito utilizado no setor industrial, no preparo de superfícies metálicas que vão receber pintura, o jateamento é um processo abrasivo de alta pressão e velocidade, que confere o tratamento superficial de peças metálicas e uniformização de rugosidades."
+    "name": "Impermeabilização",
+    "image": "/images/services/impermeabilizacao.png",
+    "call": "Utilizamos os melhores produtos para impermeabilização de tanques, reservatórios, ETEs, ETAs e telhados.",
+    "description": "Executamos serviços de impermeabilização com aplicação dos melhores produtos disponíveis no mercado, garantindo desempenho, durabilidade e segurança nas mais diversas estruturas. Atuamos em tanques de contenção, reservatórios de água potável, Estações de Tratamento de Esgoto (E.T.E.), Estações de Tratamento de Água (E.T.A.) e coberturas. Nossas soluções visam prevenir infiltrações, proteger contra agentes químicos e garantir a integridade das estruturas mesmo under condições severas de operação. Cada aplicação é realizada com rigor técnico e observância às normas específicas de cada segmento."
   },
   {
     "id": 2,
-    "name": "Pintura Epóxi",
-    "description": "Técnica amplamente utilizada na construção civil e é responsável por dar acabamento a pisos de garagens, quadras poliesportivas, salas de cirurgia, clínicas hospitalares e indústria alimentícia."
+    "name": "Hidrojateamento de Alta e Baixa Pressão",
+    "image": "/images/services/hidrojato.png",
+    "call": "O hidrojateamento de baixa pressão é ideal para estruturas frágeis, enquanto o de alta pressão é indicado para remoção de resíduos pós-obra.",
+    "description": "O hidrojateamento é uma técnica eficiente de limpeza que utiliza jatos de água sob pressão para remoção de resíduos e desobstrução de superfícies. Quando realizado em baixa pressão, é especialmente indicado para a limpeza e desentupimento de estruturas frágeis, como tubulações delicadas e superfícies sensíveis, evitando danos como trincas ou quebras. Já o hidrojateamento de alta pressão é amplamente utilizado em processos pós-obras e reformas, sendo extremamente eficaz na remoção de resíduos de cimento, argamassa, tinta e outros materiais aderidos, garantindo uma limpeza profunda e rápida. A escolha da pressão adequada é fundamental para preservar a integridade das estruturas e maximizar os resultados do serviço."
   },
   {
     "id": 3,
-    "name": "Pintura P.U.",
-    "description": "A tinta PU é uma tinta à base de resinas poliuretano, bicomponente. A tinta poliuretano possui ótima resistência a intempéries, boa dureza e flexibilidade e é indicada para pintura em ambientes externos sujeitos à ação solar, pois ela possui alta resistência aos raios solares."
+    "name": "Gerenciamento de Pintura Industrial",
+    "image": "/images/services/pintura-industrial.png",
+    "call": "O sistema de gerenciamento de pintura industrial coleta dados para avaliar condições, definir proteção, materiais e serviços adequados.",
+    "description": "O sistema de gerenciamento de pintura industrial tem como objetivo principal a coleta sistemática de dados para avaliar o estado físico das superfícies a serem tratadas. A partir dessa análise, o sistema determina o tipo de proteção mais adequado para cada condição específica, selecionando os materiais e os métodos de aplicação que melhor atendam às exigências técnicas e operacionais. Além disso, identifica os serviços necessários para garantir a eficiência e durabilidade do revestimento, otimizando recursos e assegurando a conformidade com normas técnicas vigentes. Esse processo integrado contribui para a manutenção preventiva e a maximização da vida útil das estruturas industriais."
   },
   {
     "id": 4,
-    "name": "Impermeabilização",
-    "description": "Aplicamos os melhores produtos do mercado para impermeabilização de tanques de contenção, reservatórios de água, E.T.E, E.T.A, tratamento em telhados."
+    "name": "Revestimento de Pisos Industriais",
+    "image": "/images/services/revestimento-de-pisos.png",
+    "call": "O revestimento com tinta epóxi garante alta resistência química, mecânica e térmica, ideal para pisos industriais.",
+    "description": "O revestimento de pisos industriais com tinta epóxi é uma solução altamente eficiente para ambientes que exigem desempenho superior e durabilidade. Sua formulação confere ao piso excelente resistência química, abrasiva e mecânica, suportando condições severas de operação. Entre suas principais vantagens estão as elevadas propriedades mecânicas, incluindo resistência à compressão, tração, flexibilidade, impacto e abrasão. Além disso, o sistema epóxi apresenta ótima performance frente a choques térmicos, sendo ideal para áreas sujeitas a variações bruscas de temperatura. Trata-se de um revestimento robusto, de fácil manutenção e com excelente acabamento técnico e estético."
   },
   {
     "id": 5,
-    "name": "Hidrojateamento de Alta e Baixa Pressão",
-    "description": "O hidrojateamento de baixa pressão é indicado para limpeza e desentupimento de estruturas frágeis, evitando que eles se quebrem ou trinquem. O de alta pressão, é muito utilizado após reformas e construções, já que a pressão da água facilita remoção de resíduos."
+    "name": "Jateamento Abrasivo com Granalha de Aço",
+    "image": "/images/services/jateamento-abrasivo.png",
+    "call": "O jateamento é um processo abrasivo de alta pressão usado na preparação e uniformização de superfícies metálicas para pintura",
+    "description": "O jateamento é um processo abrasivo aplicado com alta pressão e velocidade, utilizado principalmente na preparação de superfícies metálicas para posterior aplicação de pintura ou revestimentos. Sua função principal é promover o tratamento superficial por meio da remoção de óxidos, incrustações e contaminantes, além de gerar a rugosidade controlada necessária para a adequada ancoragem do revestimento. Essa uniformização das condições superficiais garante maior aderência e desempenho do sistema de pintura, sendo essencial em processos industriais que exigem alta confiabilidade e durabilidade."
   },
   {
     "id": 6,
-    "name": "Revestimento de Pisos Industriais",
-    "description": "O revestimento de piso industrial com tinta epóxi possibilita um piso com alta resistência química, abrasiva e mecânica. Além de outras vantagens como as elevadas propriedades mecânicas (compressão, tração, flexibilidade, impacto e abrasão) e a resistência a choques térmicos."
+    "name": "Pintura Epóxi",
+    "image": "/images/services/pintura-epoxi.png",
+    "call": "Técnica usada na construção civil para acabamento de pisos em áreas como garagens, quadras, hospitais e indústrias alimentícias.",
+    "description": "Trata-se de uma técnica amplamente empregada na construção civil, voltada para o acabamento de pisos que exigem alta resistência, durabilidade e facilidade de limpeza. É especialmente aplicada em áreas que demandam elevados padrões de higiene e desempenho, como garagens, quadras poliesportivas, salas de cirurgia, clínicas hospitalares e ambientes da indústria alimentícia. Seu uso proporciona superfícies niveladas, impermeáveis e com excelente acabamento estético e funcional, adequadas tanto para espaços com grande circulação quanto para locais com requisitos sanitários rigorosos."
   },
   {
     "id": 7,
     "name": "Inspeções Técnicas de Pintura Industrial",
-    "description": "A inspeção visual de pintura busca manter a boa condição da pintura industrial. O processo analisa se todas as exigências técnicas das normas de pintura foram executadas com sucesso."
+    "image": "/images/services/inspecoes-tecnicas.png",
+    "call": "O reA inspeção visual de pintura verifica se a aplicação atende às normas técnicas para garantir a qualidade da pintura industrial",
+    "description": "A inspeção visual de pintura é um procedimento fundamental para assegurar a qualidade e a durabilidade da pintura industrial. Por meio dessa análise, verifica-se se todas as etapas do processo de pintura foram realizadas conforme as especificações técnicas e normas vigentes. O objetivo principal é identificar eventuais falhas, defeitos ou não conformidades na aplicação, garantindo que a superfície pintada mantenha sua integridade, proteção contra corrosão e desempenho esperado ao longo do tempo. Dessa forma, a inspeção visual contribui para a manutenção preventiva e a confiabilidade dos revestimentos industriais."
   },
   {
     "id": 8,
-    "name": "Gerenciamento de Pintura Industrial",
-    "description": "O sistema de gerenciamento de pintura industrial visa coletar dados, definir o estado físico dos objetos, definir o tipo de proteção adequada, os materiais a serem utilizados e os tipos de serviços necessários."
+    "name": "Pintura P.U.",
+    "image": "/images/services/pintura-pu.png",
+    "call": "Tinta bicomponente à base de poliuretano, ideal para áreas externas por sua alta resistência ao sol, intempéries e desgaste.",
+    "description": "A tinta PU (poliuretano) é um revestimento bicomponente formulado à base de resinas de poliuretano, reconhecida por sua elevada resistência a intempéries, excelente dureza superficial e boa flexibilidade. Devido à sua composição avançada, é especialmente indicada para aplicações em ambientes externos, onde há exposição contínua à radiação solar e variações climáticas. Sua alta resistência aos raios UV proporciona proteção duradoura contra o desbotamento, mantendo a integridade e o acabamento da superfície por longos períodos. É uma solução eficiente para projetos que exigem desempenho, durabilidade e resistência estética em condições adversas."
   }
 ]

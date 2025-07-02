@@ -30,7 +30,8 @@ export const ServicesSection = () => {
                 <ServiceItem
                   id={item.id.toString()}
                   title={item.name}
-                  description={item.description}
+                  image={item.image}
+                  description={item.call}
                 />
               </motion.span>
             ))}
@@ -54,7 +55,8 @@ export const ServicesSection = () => {
                   id={item.id.toString()}
                   color="red"
                   title={item.name}
-                  description={item.description}
+                  image={item.image}
+                  description={item.call}
                 />
               </motion.span>
             ))}
@@ -77,7 +79,8 @@ export const ServicesSection = () => {
                 <ServiceItem
                   id={item.id.toString()}
                   title={item.name}
-                  description={item.description}
+                  image={item.image}
+                  description={item.call}
                 />
               </motion.span>
             ))}
@@ -90,15 +93,25 @@ export const ServicesSection = () => {
 const ServiceItem = ({
   id,
   title,
+  image,
   description,
   color = "blue",
 }: {
   id: string;
   title: string;
+  image: string;
   description: string;
   color?: "blue" | "red";
 }) => {
   const { setParam } = useServiceParams();
+
+  const backgroundImageStyle = {
+    backgroundImage: `url(${image})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    opacity: 0.3,
+  };
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -106,21 +119,31 @@ const ServiceItem = ({
         className={cn(
           color === "blue" && "border border-secondary",
           color === "red" && "border border-primary/70",
-          "flex flex-col w-[24rem] h-[32rem] rounded-2xl overflow-hidden"
+          "flex flex-col w-[24rem] h-[26rem] rounded-2xl overflow-hidden"
         )}
       >
         <div
           className={cn(
-            color === "blue" &&
-              "bg-[url('/images/service-image-1.png')] bg-cover bg-center opacity-70 bg-[#0a263a] border border-secondary/40",
-            color === "red" &&
-              "bg-[url('/images/service-image-2.png')] bg-cover bg-center opacity-70 bg-[#3a0a0a] border border-primary/40",
-            "flex flex-col items-center justify-center w-full h-[18rem] rounded-b-3xl text-white"
+            "relative flex flex-col items-center justify-center w-full h-auto aspect-4/3 overflow-hidden rounded-b-3xl text-white"
           )}
         >
-          <h3 className="text-3xl font-semibold text-white text-center w-3/4">
-            {title}
-          </h3>
+          <div
+            className={cn("absolute inset-0 z-0")}
+            style={backgroundImageStyle}
+          ></div>
+          <div
+            className={cn(
+              "absolute inset-0 z-0",
+              color === "blue" && "bg-secondary",
+              color === "red" && "bg-primary",
+              "mix-blend-color opacity-70"
+            )}
+          ></div>
+          <div className="relative z-10 flex items-center justify-center h-full w-full">
+            <h3 className="text-3xl font-semibold text-white text-center w-3/4">
+              {title}
+            </h3>
+          </div>
         </div>
         <div className="p-4">
           <p className="text-md text-white">{description}</p>
@@ -132,7 +155,7 @@ const ServiceItem = ({
         className="uppercase font-bold -mt-5 transform hover:-translate-y-1 transition duration-400"
         onClick={() => setParam({ serviceId: id })}
       >
-        Solicite uma cotação
+        Ver detalhes
       </Button>
     </div>
   );

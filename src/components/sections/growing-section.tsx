@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 export const GrowingSection = () => {
   return (
     <div className="grid grid-cols-5 w-full h-[36rem] bg-primary">
-      <div className="col-start-2 col-span-3 flex flex-col w-full items-center justify-center">
+      <div className="col-start-2 col-span-3 flex flex-col w-full items-center justify-center gap-8">
         <motion.div
           initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
           animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}

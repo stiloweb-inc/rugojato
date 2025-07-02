@@ -6,6 +6,8 @@ import { Label } from "../ui/label";
 import { Button } from "../ui/button";
 import { useServiceParams } from "@/hooks/use-service-params";
 import { useEffect, useState } from "react";
+import { generateWhatsAppLink } from "@/utils/generate-whatsapp-link";
+import Link from "next/link";
 
 export function ServiceDetailsModal() {
   const { params, setParam } = useServiceParams();
@@ -15,6 +17,7 @@ export function ServiceDetailsModal() {
     id: number;
     name: string;
     description: string;
+    image: string;
   } | null>(null);
 
   useEffect(() => {
@@ -32,6 +35,10 @@ export function ServiceDetailsModal() {
     return null;
   }
 
+  const sendMessageLink = generateWhatsAppLink(
+    `Olá, gostaria de falar mais sobre ${service.name}.`
+  );
+
   return (
     <Dialog
       open={!!serviceId}
@@ -47,22 +54,22 @@ export function ServiceDetailsModal() {
               {service.name}
             </Label>
             <p>{service.description}</p>
-            <Button className="bg-primary/5 hover:bg-primary/10 text-primary font-semibold text-md border-primary w-1/3">
-              <img src="/icons/whatsapp.svg" alt="logo" className="size-5" />
-              Tire suas dúvidas
+            <Button
+              asChild
+              className="bg-primary/5 hover:bg-primary/10 text-primary font-semibold text-md border-primary"
+            >
+              <Link target="_blank" href={sendMessageLink}>
+                <img src="/icons/whatsapp.svg" alt="logo" className="size-5" />
+                Fale com especialista
+              </Link>
             </Button>
           </div>
           <div className="flex flex-col w-full gap-4">
-            <div className="w-full h-auto aspect-square bg-gray-200 rounded-lg"></div>
-          </div>
-          <div className="col-span-2 w-full">
-            <div className="grid grid-cols-5 w-full gap-8">
-              <div className="bg-gray-200 w-full h-auto aspect-square rounded-lg"></div>
-              <div className="bg-gray-200 w-full h-auto aspect-square rounded-lg"></div>
-              <div className="bg-gray-200 w-full h-auto aspect-square rounded-lg"></div>
-              <div className="bg-gray-200 w-full h-auto aspect-square rounded-lg"></div>
-              <div className="bg-gray-200 w-full h-auto aspect-square rounded-lg"></div>
-            </div>
+            <img
+              src={service.image}
+              alt={service.name}
+              className="w-full h-full rounded-lg overflow-hidden object-cover object-bottom-left"
+            />
           </div>
         </div>
       </DialogContent>
