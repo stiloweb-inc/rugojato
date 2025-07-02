@@ -3,9 +3,19 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { motion } from "motion/react";
+import Link from "next/link";
+import { generateWhatsAppLink } from "@/utils/generate-whatsapp-link";
+import {
+  IconBrandWhatsapp,
+  IconBrandWhatsappFilled,
+} from "@tabler/icons-react";
 
 export const HeroSection = () => {
   const [isVisible, setVisible] = useState(false);
+
+  const sendMessageLink = generateWhatsAppLink(
+    "Olá, gostaria de saber mais sobre os serviços da RugoJato."
+  );
 
   return (
     <div className="w-full h-dvh bg-[#085E9B] bg-[url('/images/hero.png')] bg-center bg-cover pt-[6rem]">
@@ -85,7 +95,14 @@ export const HeroSection = () => {
                 size="lg"
                 className="uppercase font-bold transform hover:scale-110 transition duration-400"
               >
-                Solicite uma cotação
+                <Link
+                  target="_blank"
+                  href={sendMessageLink}
+                  className="flex items-center gap-2 [&_svg]:-mt-[2px]"
+                >
+                  <IconBrandWhatsappFilled />
+                  Solicite uma cotação
+                </Link>
               </Button>
             </motion.div>
           </div>
